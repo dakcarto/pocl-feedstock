@@ -27,6 +27,6 @@ cmake \
   -D EXTRA_HOST_LD_FLAGS="${EXTRA_HOST_LD_FLAGS}" \
   ..
 
-make -j 8
+make -j${CPU_COUNT}
 make check
 make install
